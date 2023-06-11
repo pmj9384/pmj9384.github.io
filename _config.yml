@@ -1,5 +1,5 @@
 # Setup
-title: PMJHub
+title: PMJ9384Hub
 description: The homepage of minjae Park
 url: https://pmj9384.github.io
 avatar: "/assets/avatar.jpg"
@@ -29,14 +29,14 @@ exclude:
 
 # Optimize Jekyl SEO Tag
 twitter:
-  username: vszhub
+  username: PMJ9384hub
   card: summary
 logo: logo.png
 social:
-  name: Songzi Vong
+  name: minjae Park
   links:
-    - https://twitter.com/vszhub
-    - https://github.com/vszhub
+    - https://twitter.com/pmj9384
+    - https://github.com/pmj9384
 google_site_verification: xxxxx
 lang: en
 
@@ -54,6 +54,6 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Songzi Vong
-  url: https://github.com/vszhub/
-  email: vszhub@gmail.com
+  name: minjae Park
+  url: https://github.com/pmj9384/
+  email: pmj9384@gmail.com
