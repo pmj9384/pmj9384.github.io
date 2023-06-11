@@ -1,8 +1,8 @@
 # Setup
-title: Not Pure Poole
-description: A simple, beautiful, and powerful Jekyll theme for blogs
-url: https://vszhub.github.io
-avatar: /avatar.jpeg
+title: PMJHub
+description: The homepage of minjae Park
+url: https://pmj9384.github.io
+avatar: "/assets/avatar.jpg"
 paginate: 5
 permalink: pretty
 cover_image: /bg.jpeg
