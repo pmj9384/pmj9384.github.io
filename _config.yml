@@ -50,7 +50,10 @@ sass:
 # google_analytics: UA-000000-0
 
 # Replace this value and uncomment to enable Disqus
- disqus: pmj9384-github-io-1.disqus.com
+comments:
+ provider: "disqus"
+ disqus: 
+    shortname: "pmj9384-github-io"
 
 # Specify the author for blog posts
 author:
