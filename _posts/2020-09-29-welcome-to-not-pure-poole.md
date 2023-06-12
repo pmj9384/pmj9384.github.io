@@ -1,169 +1,135 @@
 ---
 layout: post
-title: Welcome 
+title: 주로 사용하는 GitHub 명령어 모음 
 date: 2023-06-11 03:44 +0800
-last_modified_at: 2020-10-01 01:08:25 +0800
-tags: [jekyll theme, jekyll, tutorial]
+last_modified_at: 2023-06-11 03:44:44 +0800
+tags: [GitHub,GitHub command]
 toc:  true
 ---
-Welcome to **Not Pure Poole**! This is an example post to show the layout.
+주로 사용하는 **GitHub 명령어** 에 대해 알아보자!
 {: .message }
 
-First, do you notice the TOC on the right side? Try to scroll down to read this post, you'll find that the TOC is always sticky in the viewport.
+## GitHub 기본 명령어
 
-Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+현재 상태 확인 
+{% highlight text %}
+git status
+{% endhighlight %}
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+전체 로그 확인
+{% highlight text %}
+git log
+{% endhighlight %}
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+git 저장소 생성
+{% highlight text %}
+git init
+{% endhighlight %}
 
-## Inline HTML elements
+저장소 복제 
+{% highlight text %}
+git clone [https: ~~]
+{% endhighlight %}
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+저장소에 코드 추카
+{% highlight text %}
+git add 
+{% endhighlight %}
+{% highlight text %}
+git add * 
+{% endhighlight %}
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- <mark>To highlight</mark>, use `<mark>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Mark Otto</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+커밋 파일의 변경 부분 한번에 포함 
+{% highlight text %}
+git add -A 
+{% endhighlight %}
 
-Most of these elements are styled by browsers with few modifications on our part.
+커밋 생성 
+{% highlight text %}
+git commit -m "message"
+{% endhighlight %}
 
-## Footnotes
+변경사항 push
+{% highlight text %}
+git push origin master 
+{% endhighlight %}
 
-Footnotes are supported as part of the Markdown syntax. Here's one in action. Clicking this number[^fn-sample_footnote] will lead you to a footnote. The syntax looks like:
+원격 저장소 변경내용 가져오기 (pull)
+{% highlight text %}
+git pull
+{% endhighlight %}
+
+## Git Branch 
+
+git 파일 생성
+{% highlight text %}
+git init
+{% endhighlight %}
+
+github  주소 연결
+{% highlight text %}
+git remote add origin [github 주소]
+{% endhighlight %}
+
+브랜치 생성
+{% highlight text %}
+git branch [브랜치 명]
+{% endhighlight %}
+
+해당 브랜치 이동
+{% highlight text %}
+git checkout [브랜치 명]
+{% endhighlight %}
+
+원하는 브랜치 이동 확인
+{% highlight text %}
+git branch
+{% endhighlight %}
+
+파일 폴더 add
+{% highlight text %}
+git add.
+{% endhighlight %}
+
+커밋
+{% highlight text %}
+git commit -m "commit message" 
+{% endhighlight %}
+
+원하는 브랜치로 push 원격 서버로 전송
+{% highlight text %}
+git push origin [브랜치명]
+{% endhighlight %}
+
+브랜치 삭제
+{% highlight text %}
+git branch -d [브랜치 이름]
+{% endhighlight %}
+
+현재 브랜치에 다른 브랜치 수정사항 병합
+{% highlight text %}
+git merge [다른 브랜치 명]
+{% endhighlight %}
+
+## Git Config
+
+전체 config 리스트 확인
+{% highlight text %}
+git config --list
+{% endhighlight %}
+
+git config 설정 
+{% highlight text %}
+git config --global user.name "아무개"
+git config --global user.email "name@naver.com"
+{% endhighlight %}
+
+git config 삭제
 
 {% highlight text %}
-Clicking this number[^fn-sample_footnote]
+git config --unset user.name
+git config --unset user.email
 {% endhighlight %}
 
-Each footnote needs the `^fn-` prefix and a unique ID to be referenced for the footnoted content. The syntax for that list looks something like this:
-
-{% highlight text %}
-[^fn-sample_footnote]: Handy! Now click the return link to go back.
-{% endhighlight %}
-
-You can place the footnoted content wherever you like. Markdown parsers should properly place it at the bottom of the post.
-
-## Heading
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-### Code
-
-Inline code is available with the `<code>` element. Snippets of multiple lines of code are supported through Rouge. Longer lines will automatically scroll horizontally when needed. You may also use code fencing (triple backticks) for rendering code.
-
-{% highlight js %}
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-{% endhighlight %}
-
-You may also optionally show code snippets with line numbers. Add `linenos` to the Rouge tags.
-
-{% highlight js linenos %}
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-{% endhighlight %}
-
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-
-### Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-- Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-- Donec id elit non mi porta gravida at eget metus.
-- Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-<dl>
-  <dt>HyperText Markup Language (HTML)</dt>
-  <dd>The language used to describe and define the content of a Web page</dd>
-
-  <dt>Cascading Style Sheets (CSS)</dt>
-  <dd>Used to describe the appearance of Web content</dd>
-
-  <dt>JavaScript (JS)</dt>
-  <dd>The programming language used to build advanced Web sites and applications</dd>
-</dl>
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-### Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](http://placehold.it/800x400 "Large example image")
-![placeholder](http://placehold.it/400x200 "Medium example image")
-![placeholder](http://placehold.it/200x200 "Small example image")
-
-Align to the center by adding `class="align-center"`:
-
-![placeholder](http://placehold.it/400x200 "Medium example image"){: .align-center}
-
-### Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
-
------
-
-Want to see something else added? <a href="https://github.com/vszhub/not-pure-poole/issues/new">Open an issue.</a>
-
-[^fn-sample_footnote]: Handy! Now click the return link to go back.
+참고 자료 
+https://eehoeskrap.tistory.com/666
