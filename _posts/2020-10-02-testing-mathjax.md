@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 주로 사용하는 Linux 명령어
-tags: [Linux,commends]
+tags: [Linux,commands]
 date: 2023-06-12 13:00 +0800
 ---
 주로 사용하는 **Linux 명령어** 에 대해 알아보자!
