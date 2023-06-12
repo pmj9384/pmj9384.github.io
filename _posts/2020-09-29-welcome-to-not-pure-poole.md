@@ -3,7 +3,7 @@ layout: post
 title: 주로 사용하는 GitHub 명령어 모음 
 date: 2023-06-11 03:44 +0800
 last_modified_at: 2023-06-11 03:44:44 +0800
-tags: [GitHub,GitHub command]
+tags: [GitHub,command]
 toc:  true
 ---
 주로 사용하는 **GitHub 명령어** 에 대해 알아보자!
