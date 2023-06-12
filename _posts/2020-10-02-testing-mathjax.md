@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Testing MathJax
+title: 주로 사용하는 Linux 명령어
 tags: Linux,Linux commends
 date: 2023-06-12 13:00 +0800
 ---
