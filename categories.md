@@ -4,3 +4,7 @@ permalink: /categories/
 title: Categories
 type: categories
 ---
+commands
+github
+mysql
+linux
