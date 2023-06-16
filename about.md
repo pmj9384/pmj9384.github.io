@@ -20,9 +20,10 @@ Education
 
 Skills
 
-• Front-End : HTML5, CSS3
+• Development tools : Unity
 
-• Back-End : Java, Python, C#, Unity, MySQL, Docker
+• Language : HTML5, CSS3, Java, Python, C#, MySQL,   Docker
+
 
 Main OS : Mac OS
 
