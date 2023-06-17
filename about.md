@@ -5,8 +5,6 @@ title: About
 Profile
 이름 : 박민재
 
-연락처 : 010-4485-7721
-
 이메일 : wer9384@gmail.com
 
 GitHub : https://github.com/pmj9384
