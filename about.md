@@ -20,11 +20,12 @@ Education
 
 Skills
 
-• Development tools : Unity
+• Development tools : Unity, Docker
 
-• Language : HTML5, CSS3, Java, Python, C#, MySQL,   Docker
+• Language : HTML5, CSS3, Java, Python, C#, MySQL
 
 
 Main OS : Mac OS
+
 
 My Projects
