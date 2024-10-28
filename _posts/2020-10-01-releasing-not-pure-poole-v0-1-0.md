@@ -3,7 +3,7 @@ layout: post
 title: 주로 사용하는 MySQL 명령어
 author: minjae Park
 tags: [MySQL,commands]
-date: 2023-06-11 13:00 +0800
+date: 2024-10-28 13:00 +0800
 ---
 주로 사용하는 **MySQL 명령어** 에 대해 알아보자!
 {: .message }
