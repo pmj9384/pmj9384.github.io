@@ -4,7 +4,7 @@ title: 주로 사용하는 Linux 명령어
 tags: [Linux,commands]
 date: 2024-10-26 13:00 +0800
 ---
-주로 사용하는 **Linux 명령어** 에 대해 알아보자!
+주로 사용하는 **Linux 명령어** 에 대해 알아보자!!!
 {: .message }
 
 ## Linux 기본 명령어
